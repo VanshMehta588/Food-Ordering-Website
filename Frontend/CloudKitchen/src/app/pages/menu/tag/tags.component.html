@@ -1,0 +1,8 @@
+<div *ngIf="tags"[style.justifyContent]="justifyContent">
+    <a *ngFor="let tag of tags" routerLink="/menu/tag/{{tag.name}}" (click)="getAllFoodByTag(tag.name)">{{tag.name}}({{tag.count}})</a>
+
+</div>
+<div *ngIf="foodpagetags" [style.justifyContent]="justifyContent">
+    <a *ngFor="let tagname of foodpagetags" routerLink="/menu/tag/{{tagname}}">{{tagname}}</a>
+
+</div>

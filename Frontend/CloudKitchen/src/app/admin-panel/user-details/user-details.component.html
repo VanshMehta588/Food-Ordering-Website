@@ -1,0 +1,26 @@
+<h1>Users </h1>
+<p class="message-p">{{userMessage}}</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Email Id:</th>
+      <th scope="col">Phone No.</th>
+      <th scope="col">Password</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of userData">
+      <td>{{data.id}}</td>
+      <td>{{data.username}}</td>
+      <td>{{data.email}}</td>
+      <td>{{data.number}}</td>
+      <td>{{data.password}}</td>
+      <td class="btn">
+        <button (click)="deleteUser(data.id)"><i class="fa-solid fa-trash fa-lg"></i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>

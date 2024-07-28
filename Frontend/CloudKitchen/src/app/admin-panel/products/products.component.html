@@ -1,0 +1,36 @@
+<div class="product-list">
+  <h1>All Food-Item List</h1>
+  <button id="add" type="button" class="btn btn-outline-dark" (click)="addItem()">Add Food-Item</button>
+  <br/>
+  <p class="message-p">{{foodMessage}}</p>
+  <table>
+      <thead>
+          <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Star Rating</th>
+              <th>Tags</th>
+              <th>Cook Time</th>
+              <th>Origins</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of foodList">
+              <td><img src="{{item.imageUrl}}" /></td>
+              <td>{{item.name}}</td>
+              <td>{{item.price}}</td>
+              <td>{{item.star}}</td>
+              <td>{{item.tags}}</td>
+              <td>{{item.cookTime}}</td>
+              <td>{{item.origins}}</td>
+              <td>
+                  <button (click)="deleteProduct(item.id)"><i class="fa-solid fa-trash fa-lg"></i></button>
+                  &nbsp;
+                  <a class="adjust-update-link" (click)="updateProduct(item.id)"><i class="fa-solid fa-pen-to-square fa-lg"></i></a>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  </div>

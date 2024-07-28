@@ -1,0 +1,146 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Berkshire Swash', cursive;
+}
+ul li a{
+    height: 22rem !important;
+    width: 20rem !important;
+    border:1 px solid whitesmoke;
+    border-radius:1rem;
+    margin:0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+li a:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+.content{
+    padding: .5rem 1rem;
+    position: relative;
+
+}
+.favourite{
+    color: red;
+    position: absolute;
+    top: .5rem;
+    right:1rem;
+    font-size: 1.2rem;
+}
+.favourite.not{
+    color: black;
+
+}
+.star{
+    margin-bottom: .2rem;
+}
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.origins{
+    flex: 9;
+}
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+.origins span{
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0) ;
+    color: rgb(255, 255, 255);
+    font-size: .7rem;
+    margin-right: .3rem;
+    display: inline-block;
+}
+.cook-time{
+    font-size: .8rem;
+    flex:3;
+    text-align: right;
+}
+.price{
+    color:#424242;
+    margin-top: .2rem;
+
+}
+.search{
+  display:flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.search input{
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 3rem;
+  width:20rem;
+  background-color: rgb(219, 219, 219);
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+
+}
+.search button{
+  color: white;
+  height: 3rem;
+  width:5rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: rgb(0, 129, 86);
+  opacity: .8;
+  outline: none;
+}
+.search button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+

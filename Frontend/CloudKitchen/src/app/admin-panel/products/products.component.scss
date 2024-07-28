@@ -1,0 +1,46 @@
+table{
+  text-align: center;
+  color: rgb(0, 81, 87);
+  border-collapse: collapse;
+  width: 100%;
+
+}
+h1{
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#add{
+  float: right;
+}
+
+img{
+  width:180px;
+  height: 150px;
+}
+
+table td, table th{
+  border: 1px solid rgba(156, 0, 133, 0.484);
+  padding: 10px;
+  min-height: 160px;
+
+}
+
+button{
+
+  border:0;
+  align-items: center;
+  color: rgb(0, 81, 87);
+  background-color: white;
+}
+
+.adjust-update-link{
+  margin-left: 10px;
+}
+a{
+  color: rgb(0, 81, 87);
+}

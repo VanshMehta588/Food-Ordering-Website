@@ -1,0 +1,96 @@
+<form #update="ngForm" (ngSubmit)="submit(update.value)" class="common-form">
+    <!-- <div class="container">
+  <div class="card">
+    <br>
+      <a class="info">User Details</a>
+      <p class="message-p">{{updateMessage}}</p>
+      <div class="inputBox">
+          <input type="text" required="required" name="username" ngModel="{{userData?.username}}" />
+          <span class="user">Username</span>
+      </div>
+
+      <div class="inputBox">
+        <input type="text" required="required" name="email" ngModel="{{userData?.email}}" />
+        <span class="email">E-Mail</span>
+    </div>
+
+    <div class="inputBox">
+      <input type="text" required="required" name="number" ngModel="{{userData?.number}}" />
+      <span class="number">Number</span>
+  </div>
+
+      <div class="inputBox">
+          <input type="password" required="required" name="password" ngModel="{{userData?.password}}" />
+          <span>Password</span>
+      </div>
+      <span class="h1">
+      Address:
+    </span>
+      <div class="inputBox">
+        <input type="text" required="required" name="flatno" ngModel="{{userData?.flatno}}" />
+        <span class="flatno">Flat No.</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" required="required" name="street" ngModel="{{userData?.street}}" />
+      <span class="street">Street Details</span>
+    </div>
+    <div class="inputBox">
+    <input type="text" required="required" name="city" ngModel="{{userData?.city}}" />
+    <span class="city">City Name</span>
+    </div>
+    <div class="inputBox">
+    <input type="text" required="required" name="state" ngModel="{{userData?.state}}" />
+    <span class="state">State</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" required="required" name="zipCode" ngModel="{{userData?.zipCode}}" />
+      <span class="zipcode">Zip Code</span>
+    </div>
+
+      <div class="inputBox">
+        <input type="text" required="required" name="imageUrl" ngModel="{{userData?.imageUrl}}" />
+        <span class="imageUrl">Image Url</span>
+    </div>
+    <h6>*Note: Please Turn Your Image into ImageUrl And then paste that Image Url in given field. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Our Preffered Website for  converting Image into ImageUrl is :<a href="https://www.atatus.com/tools/image-to-url"> Click me</a></h6>
+      <button class="enter">Update-Details</button>
+      <br>
+
+  </div>
+</div> -->
+    <div class="container rounded bg-white mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img *ngIf="userImageUrl" class="image" src="{{userData?.imageUrl}}" alt=""><br>
+                    <img *ngIf="!userImageUrl" class="image" src="https://th.bing.com/th/id/R.7ea4af7d8401d2b43ee841bfa2abe89d?rik=xidyUKdveUKULQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-download-icons-logos-emojis-users-2240.png&ehk=2%2bOqgdMZqFkKaBclc%2fPL9B86vLju3iBGiFmH64kXaTM%3d&risl=&pid=ImgRaw&r=0"
+                        alt=""><br>
+                    <span class="font-weight-bold">{{userData?.username}}</span>
+                    <span class="text-black-50">{{userData?.email}}</span><span> </span></div>
+            </div>
+            <div class="col-md-7 border-right">
+                <div class="p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                        <p class="message-p">{{updateMessage}}</p>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">User Name : </label><input type="text" style="pointer-events: none;" name="username" class="form-control" ngModel="{{userData?.username}}"></div>
+                        <div class="col-md-12"><label class="labels">Email ID : </label><input type="text" style="pointer-events: none;" name="email" class="form-control" ngModel="{{userData?.email}}"></div>
+                        <div class="col-md-12"><label class="labels">Mobile Number : </label><input type="text" name="number" class="form-control" ngModel="{{userData?.number}}"></div>
+                        <div class="col-md-12"><label class="labels">Address Line 1 : </label><input type="text" name="flatno" class="form-control" ngModel="{{userData?.flatno}}"></div>
+                        <div class="col-md-12"><label class="labels">Address Line 2 : </label><input type="text" name="street" class="form-control" ngModel="{{userData?.street}}"></div>
+                        <div class="col-md-12"><label class="labels">City : </label><input type="text" name="city" class="form-control" ngModel="{{userData?.city}}"></div>
+                        <div class="col-md-12"><label class="labels">Post Code : </label><input type="text" name="zipCode" class="form-control" ngModel="{{userData?.zipCode}}"></div>
+                        <div class="col-md-6"><label class="labels">State : </label><input type="text" name="state" class="form-control" ngModel="{{userData?.state}}"></div>
+                        <div class="col-md-6"><label class="labels">Country : </label><input type="text" class="form-control" value="India" disabled></div>
+                        <div class="col-md-12"><label class="labels">Password : </label><input type="password" name="password" class="form-control" ngModel="{{userData?.password}}"></div>
+                        <div class="col-md-12"><label class="labels">ImageUrl : </label><input type="text" name="imageUrl" class="form-control" ngModel="{{userData?.imageUrl}}"></div>
+                        <h6 class=""><br>*Note: Please Turn Your Image into ImageUrl And then paste that Image Url in given field. <br> Our Preffered Website for converting Image into ImageUrl is :<a href="https://www.atatus.com/tools/image-to-url"> Click me</a></h6>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button">Update Profile</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

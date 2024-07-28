@@ -1,0 +1,303 @@
+{
+  "seller": [
+    {
+      "username": "dhruv",
+      "email": "vansh.mehta@gmail.com",
+      "number": "5555555",
+      "password": "55",
+      "id": 1
+    },
+    {
+      "username": "dhruv",
+      "email": "secretagentofficer@merijaan.com",
+      "number": "5555555",
+      "password": "1111",
+      "id": 2
+    },
+    {
+      "username": "dhruv",
+      "email": "secretagentofficer@merijaan.com",
+      "number": "5555555",
+      "password": "sasasas",
+      "id": 3
+    },
+    {
+      "username": "dhruv",
+      "email": "vansh.mehta@gmail.com",
+      "number": "5555555",
+      "password": "2244",
+      "id": 4
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "email": "9428164176",
+      "password": "2244",
+      "id": 2
+    },
+    {
+      "email": "pathan@gmail.com",
+      "number": "5555555",
+      "password": "55",
+      "id": 3
+    },
+    {
+      "email": "pathan",
+      "number": "5555555",
+      "password": "66",
+      "id": 4
+    },
+    {
+      "username": "dhruv",
+      "email": "pathan@gmail.com",
+      "number": "5555555",
+      "password": "555",
+      "id": 5
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 10
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 11
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 13
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 14
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 15
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 16
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 17
+    },
+    {
+      "username": "",
+      "email": "",
+      "number": "",
+      "password": "",
+      "id": 18
+    }
+  ],
+  "items": [
+    {
+      "name": "Chana chor",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "https://th.bing.com/th/id/OIP.oMdPtKMaBAXxPC_GOC3eiwHaE8?pid=ImgDet&rs=1",
+      "id": 1
+    },
+    {
+      "name": "Mithai",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "https://pixfeeds.com/images/weddings/wedding-etiquette/1200-578800028-catering-table-full-of-tasty-food.jpg",
+      "id": 2
+    },
+    {
+      "name": "Mithai",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "https://th.bing.com/th/id/OIP.L-Y9AVFJdGeQbDBb2QfuxQHaLH?pid=ImgDet&rs=1",
+      "id": 3
+    },
+    {
+      "name": "",
+      "price": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "price": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "id": 5
+    }
+  ],
+  "admins": [
+    {
+      "email": "9428164176",
+      "password": "223344",
+      "id": 1
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "name": "France Speciality",
+      "tags": [
+        "Combo",
+        "Dessert"
+      ],
+      "cookTime": "10-20",
+      "price": "10",
+      "favourite": false,
+      "star": "3.5",
+      "origins": "France",
+      "imageUrl": "/assets/food1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dinner test",
+      "tags": [
+        "Dinner",
+        "Dessert"
+      ],
+      "cookTime": "10-20",
+      "price": "10",
+      "favourite": false,
+      "star": "3.5",
+      "origins": "France",
+      "imageUrl": "/assets/food1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "combo dessert",
+      "tags": [
+        "Combo",
+        "Dessert"
+      ],
+      "cookTime": "10-20",
+      "price": "10",
+      "favourite": false,
+      "star": "3.5",
+      "origins": "France",
+      "imageUrl": "/assets/food1.jpg"
+    },
+    {
+      "name": "Atiq Pathaan",
+      "price": "7864545",
+      "category": "Telivision",
+      "description": "cdcdc",
+      "tags": [
+        "Dessert"
+      ],
+      "imageUrl": "https://th.bing.com/th/id/OIP.7tvU94UYZXwUG1WiJ5DTlwHaEo?pid=ImgDet&rs=1",
+      "id": 4
+    },
+    {
+      "name": "Atiq Pathaan",
+      "price": "",
+      "category": "",
+      "description": "",
+      "tags": [
+        "Combo",
+        "Dessert"
+      ],
+      "imageUrl": "https://wallpaperforu.com/wp-content/uploads/2020/10/food-wallpaper-20100313245441.jpg",
+      "id": 5
+    },
+    {
+      "name": "Atiq Pathaan",
+      "price": "555",
+      "category": "ccdc",
+      "tags": [
+        "Lunch"
+      ],
+      "description": "ferf",
+      "imageUrl": "https://th.bing.com/th/id/OIP.E9_znRJ07WtBddTAXsHizgHaGO?pid=ImgDet&rs=1",
+      "id": 6
+    },
+    {
+      "name": "Atiq Pathaan",
+      "price": "7864545",
+      "star": "5",
+      "tags": [
+        "Lunch"
+      ],
+      "imageUrl": "https://www.assaggioboston.com/news/wp-content/uploads/2018/12/shutterstock_228423190.jpg",
+      "cookTime": "10-20",
+      "origins": "India",
+      "id": 7
+    }
+  ]
+}

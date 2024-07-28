@@ -1,0 +1,15 @@
+<div class="signup-page">
+<div class="login-page">
+  <div  class="user-login" class="form">
+    <div class="login">
+      <div class="login-header">
+        <h3>ADMIN LOGIN</h3>
+        <p class="error-p">{{authError}}</p>
+      </div>
+    </div>
+    <form [formGroup]="adminLoginForm" class="common-form" (ngSubmit)="login()" class="login-form">
+      <input type="email" placeholder="Email" name="email" formControlName="email"/>
+      <input type="password" placeholder="Password" name="password" formControlName="password" />
+      <button>Login</button>
+    </form>
+</div>

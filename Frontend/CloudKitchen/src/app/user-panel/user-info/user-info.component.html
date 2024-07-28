@@ -1,0 +1,56 @@
+<!-- <div class="container">
+  <div class="card">
+    <div class="card-header">
+      <a class="info">User Details</a>
+      <span class="inputBox">
+        <hr>
+        <div class="container">
+          <img *ngIf="userImageUrl" src="{{userImageUrl}}" alt=""><br>
+          <img *ngIf="!userImageUrl" src="https://th.bing.com/th/id/R.7ea4af7d8401d2b43ee841bfa2abe89d?rik=xidyUKdveUKULQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-download-icons-logos-emojis-users-2240.png&ehk=2%2bOqgdMZqFkKaBclc%2fPL9B86vLju3iBGiFmH64kXaTM%3d&risl=&pid=ImgRaw&r=0" alt=""><br>
+        </div>
+      <span class="details">
+        <hr><br>
+        Name: {{userName}} <br><br>
+        Email: {{userEmail}} <br><br>
+        Phone No: {{userPhoneNo}} <br><br>
+        Password: {{userPassword}} <br><br>
+        Address: {{userFlatno}}<br>{{userStreet}}<br>{{userCity}} {{userZipCode}}<br>{{userState}} <br><br>
+      </span>
+    </span>
+    </div>
+      <button class="enter" (click)="updateUser(userId)">Update Details</button>
+  </div>
+</div> -->
+
+
+<div class="container rounded bg-white mt-4 mb-4">
+  <div class="row">
+      <div class="col-md-4 border-right">
+          <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+            <img *ngIf="userImageUrl" class="image" src="{{userImageUrl}}" alt=""><br>
+            <img *ngIf="!userImageUrl" class="image" src="https://th.bing.com/th/id/R.7ea4af7d8401d2b43ee841bfa2abe89d?rik=xidyUKdveUKULQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-download-icons-logos-emojis-users-2240.png&ehk=2%2bOqgdMZqFkKaBclc%2fPL9B86vLju3iBGiFmH64kXaTM%3d&risl=&pid=ImgRaw&r=0" alt=""><br>
+            <span class="font-weight-bold">{{userName}}</span>
+            <span class="text-black-50">{{userEmail}}</span><span> </span></div>
+      </div>
+      <div class="col-md-7 border-right">
+          <div class="p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="text-right">Profile Settings</h4>
+          </div>
+              <div class="row mt-3">
+                  <div class="col-md-12"><label class="labels">User Name : </label><input type="text" class="form-control"  value="{{userName}}" disabled></div>
+                  <div class="col-md-12"><label class="labels">Email ID : </label><input type="text" class="form-control"  value="{{userEmail}}" disabled></div>
+                  <div class="col-md-12"><label class="labels">Mobile Number : </label><input type="text" class="form-control" value="{{userPhoneNo}}" disabled></div>
+                  <div class="col-md-12"><label class="labels">Address Line 1 : </label><input type="text" class="form-control"  value="{{userFlatno}}" disabled></div>
+                  <div class="col-md-12"><label class="labels">Address Line 2 : </label><input type="text" class="form-control"  value="{{userStreet}}" disabled></div>
+                  <div class="col-md-12"><label class="labels">City : </label><input type="text" class="form-control"  value="{{userCity}}" disabled></div>
+                  <div class="col-md-12"><label class="labels">Post Code : </label><input type="text" class="form-control" value="{{userZipCode}}" disabled></div>
+                  <div class="col-md-6"><label class="labels">State : </label><input type="text" class="form-control" value="{{userState}}" disabled></div>
+                  <div class="col-md-6"><label class="labels">Country : </label><input type="text" class="form-control" value="India" disabled></div>
+                  <div class="col-md-12"><label class="labels">Password</label><input type="text" class="form-control"  value="{{userPassword}}" disabled></div>
+              </div>
+              <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" (click)="updateUser(userId)">Edit Profile</button></div>
+          </div>
+      </div>
+  </div>
+</div>

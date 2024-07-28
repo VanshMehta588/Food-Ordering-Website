@@ -1,0 +1,96 @@
+<div class="add-product">
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+        <div class="container">
+          <div class="card">
+              <a class="addproduct">Add Product</a>
+              <p class="message-p">{{addFoodMessage}}</p>
+              <div class="inputBox1">
+                  <input type="text" required="required"  name="name" ngModel/>
+                  <span class="user">Food Item Name</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="text" required="required"  name="price" ngModel/>
+                  <span>Food Price</span>
+              </div>
+
+              <div class="in">
+                <span>Rating</span>
+              <div class="rating">
+                <label for="star-5">
+                  <input type="radio" id="star-5" name="star" value="5" ngModel/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <label for="star-4">
+                  <input type="radio" id="star-4" name="star" value="4" ngModel/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <label for="star-3">
+                  <input type="radio" id="star-3" name="star" value="3" ngModel/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <label for="star-2">
+                  <input type="radio" id="star-2" name="star" value="2" ngModel/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <label for="star-1">
+                  <input type="radio" id="star-1" name="star" value="1" ngModel/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+              </div>
+            </div>
+
+            <div class="container">
+              <label class="radio">
+                <input type="radio" name="tags" value="Drinks" ngModel/>
+                <span class="name">Drinks</span>
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="tags" value="Lunch" ngModel/>
+                <span class="name">Lunch</span>
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="tags" value="Dinner" ngModel/>
+                <span class="name">Dinner</span>
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="tags" value="Fastfood" ngModel/>
+                <span class="name">Fast Food</span>
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="tags" value="Dessert" ngModel/>
+                <span class="name">Dessert</span>
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="tags" value="Farsaan" ngModel/>
+                <span class="name">Farsaan</span>
+              </label>
+            </div>
+
+              <div class="inputBox">
+                  <input type="text" required="required" name="cookTime" ngModel/>
+                  <span>Cook Time</span>
+              </div>
+
+              <div class="inputBox">
+                <input type="text" required="required" name="origins" ngModel/>
+                <span>Origin of Food Item</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" required="required" name="imageUrl" ngModel/>
+              <span>Image Url</span>
+          </div>
+
+              <button class="form-input">Add-Product</button>
+
+          </div>
+      </div>
+
+    </form>
+</div>

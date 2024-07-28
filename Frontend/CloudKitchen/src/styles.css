@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "adminstyle.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color:green;
+    --secondary-color:#162328;
+    --tertiary-color:#3FC060;
+}
+
+body{
+    height:100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg " >
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">
+        <div class="button">
+          <div class="box">F</div>
+          <div class="box">O</div>
+          <div class="box">O</div>
+          <div class="box">D</div>
+          <div class="box">I</div>
+          <div class="box">E</div>
+          <div class="box"><img src="https://th.bing.com/th/id/OIP.gUspNbDUFbE_uuqYQXoxcgHaHa?pid=ImgDet&rs=1" alt=""></div>
+        </div></a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div [ngSwitch]="menuType" class="collapse navbar-collapse" id="navbarNav">
+        <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"><i class="fa-solid fa-house fa-lg"></i> &nbsp;Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="" routerLink="menu" routerLinkActive="active-link"><i class="fa-sharp fa-solid fa-book-open fa-lg"></i> &nbsp;Menu</a>
+          </li>
+           <!-- <p class="rest">Restaurant</p> -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link"><i class="fa-solid fa-address-card fa-lg"></i> &nbsp;About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="user-auth" routerLinkActive="active-link"><i class="fa-solid fa-right-to-bracket fa-lg"></i> &nbsp;Login</a>
+          </li>
+        </ul>
+        <ul *ngSwitchCase="'user'" class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active trp" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"><i class="fa-solid fa-house fa-lg"></i> &nbsp;Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link trp" routerLink="menu" routerLinkActive="active-link"><i class="fa-sharp fa-solid fa-book-open fa-lg"></i> &nbsp;Menu</a>
+          </li>
+          <div class="dropdown">
+            <li class="nav-item" data-bs-toggle="dropdown">
+              <a class="nav-link">
+                <img  *ngIf="userImageUrl" class="userimg" src="{{userImageUrl}}" alt="">
+                <img *ngIf="!userImageUrl" class="userimg" src="https://th.bing.com/th/id/R.7ea4af7d8401d2b43ee841bfa2abe89d?rik=xidyUKdveUKULQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-download-icons-logos-emojis-users-2240.png&ehk=2%2bOqgdMZqFkKaBclc%2fPL9B86vLju3iBGiFmH64kXaTM%3d&risl=&pid=ImgRaw&r=0" alt="">
+
+                &nbsp;{{userName | titlecase}}
+              </a>
+            </li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" routerLink="user-panel"><i class="fa-solid fa-address-card fa-lg"></i> &nbsp;&nbsp;&nbsp;Dashboard</a></li>
+              <li><a class="dropdown-item" href="#" (click)="userlogout()"><i class="fa-solid fa-arrow-right-from-bracket fa-lg"></i> &nbsp;&nbsp;&nbsp;Logout</a>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link trp" routerLink="menu/cart-page" routerLinkActive="active-link"><i class="fa-solid fa-cart-shopping fa-lg"></i> &nbsp;Cart</a>
+          </li>
+        </ul>
+        <!-- <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"><i class="bi bi-house-door-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="menu" routerLinkActive="active-link"><img src="https://th.bing.com/th/id/R.c50db8d4668de7b547843a3f090e65a2?rik=WhuWIxvyV0rW6A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_350759.png&ehk=N%2fJSvlwvpnHGRN%2bzMeY5zOHiYgs%2fmmdl4XjdDn8VT%2fE%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
+          </li>
+          <div class="dropdown">
+            <li class="nav-item" data-bs-toggle="dropdown">
+              <a class="nav-link" > <i class="bi bi-person-circle"></i> {{sellerName | titlecase}}</a>
+            </li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" routerLink="about">About</a></li>
+              <li><a class="dropdown-item" href="#" (click)="logout()">Logout <i class="bi bi-box-arrow-right"></i></a></li>
+            </ul>
+          </div>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="seller-add-item" routerLinkActive="active-link">Add-Restaurant</a>
+            </li>
+            <ul *ngSwitchCase="'admin'" class="navbar-nav ms-auto">
+
+            </ul>
+        </ul> -->
+      </div>
+    </div>
+  </nav>

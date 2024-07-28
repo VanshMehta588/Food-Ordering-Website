@@ -1,0 +1,139 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+.container >*{
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+img{
+    border-radius: 3rem;
+    flex: 1 0;
+    object-fit: cover;
+    height:30rem;
+    margin: 1rem;
+}
+.details{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-left: 1rem ;
+
+}
+.details .header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.details .name{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.details .favourite{
+    color:red;
+    font-size:2.5rem;
+}
+.details .favourite.not{
+    color: gray;
+}
+.details .origins{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 1rem 0;
+}
+.details .origins > span{
+    /* padding: .5rem; */
+    font-size: 1.2rem;
+    /* margin: .5rem .5rem .5rem 0; */
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+.details .cook-time{
+  margin-left: 2px;
+}
+.details .cook-time span{
+    padding: .6rem 2rem .6rem 0;
+    border-radius: 10rem;
+    font-size: 1.3rem;
+}
+.details .price {
+    font-size: 1.8rem;
+    margin: 2rem 2rem 2rem 0;
+    color: green;
+}
+.details .price::before{
+  margin-left: 10px;
+    content: "Price: ";
+    color:black;
+}
+.details button{
+    color: white;
+    background-color: red;
+    border:none;
+    font-size:1.2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    outline: none;
+}
+.details button:hover{
+    opacity:.8;
+    cursor: pointer;
+
+}
+.value{
+  text-align: center;
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}

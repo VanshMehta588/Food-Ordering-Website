@@ -1,0 +1,95 @@
+<div class="update-product">
+  <form #updateProduct="ngForm" (ngSubmit)="submit(updateProduct.value)" class="common-form">
+      <div class="container">
+        <div class="card">
+            <a class="addproduct">Update Product</a>
+            <p class="message-p">{{foodMessage}}</p>
+            <div class="inputBox1">
+                <input type="text" required="required"  name="name" ngModel="{{foodData?.name}}" />
+                <span class="user">Food Item Name</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required="required"  name="price" ngModel="{{foodData?.price}}"/>
+                <span>Food Price</span>
+            </div>
+
+            <div class="in">
+              <span>Rating</span>
+            <div class="rating">
+              <label for="star-5">
+                <input type="radio" id="star-5" name="star" value="5" ngModel="{{foodData?.star}}"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <label for="star-4">
+                <input type="radio" id="star-4" name="star" value="4" ngModel="{{foodData?.star}}"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <label for="star-3">
+                <input type="radio" id="star-3" name="star" value="3" ngModel="{{foodData?.star}}"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <label for="star-2">
+                <input type="radio" id="star-2" name="star" value="2" ngModel="{{foodData?.star}}"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <label for="star-1">
+                <input type="radio" id="star-1" name="star" value="1" ngModel="{{foodData?.star}}"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+            </div>
+          </div>
+
+          <div class="container">
+            <label class="radio">
+              <input type="radio" name="tags" value="Drinks" ngModel="{{foodData?.tags}}"/>
+              <span class="name">Drinks</span>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tags" value="Lunch" ngModel="{{foodData?.tags}}"/>
+              <span class="name">Lunch</span>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tags" value="Dinner" ngModel="{{foodData?.tags}}"/>
+              <span class="name">Dinner</span>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tags" value="Fastfood" ngModel="{{foodData?.tags}}"/>
+              <span class="name">Fast Food</span>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tags" value="Dessert" ngModel="{{foodData?.tags}}"/>
+              <span class="name">Dessert</span>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="tags" value="Farsaan" ngModel="{{foodData?.tags}}"/>
+              <span class="name">Farsaan</span>
+            </label>
+          </div>
+
+            <div class="inputBox">
+                <input type="text" required="required" name="cookTime" ngModel="{{foodData?.cookTime}}"/>
+                <span>Cook Time</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" required="required" name="origins" ngModel="{{foodData?.origins}}"/>
+              <span>Origin of Food Item</span>
+          </div>
+
+          <div class="inputBox">
+            <input type="text" required="required" name="imageUrl" ngModel="{{foodData?.imageUrl}}"/>
+            <span>Image Url</span>
+        </div>
+
+        <button class="form-input">Update-Product</button>
+
+        </div>
+    </div>
+  </form>
+</div>

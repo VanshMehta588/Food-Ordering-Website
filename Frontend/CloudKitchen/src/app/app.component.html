@@ -1,0 +1,7 @@
+
+<app-navbar *ngIf="(!router.url.includes('user-panel') && !router.url.includes('admin-dashboard'))"></app-navbar>
+<router-outlet></router-outlet>
+<app-footer *ngIf="(!router.url.includes('user-panel') && !router.url.includes('admin-dashboard'))"></app-footer>
+
+
+
